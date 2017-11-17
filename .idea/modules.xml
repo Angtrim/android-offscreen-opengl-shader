@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OffScreenShader.iml" filepath="$PROJECT_DIR$/OffScreenShader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/offlibrary/offlibrary.iml" filepath="$PROJECT_DIR$/offlibrary/offlibrary.iml" />
+    </modules>
+  </component>
+</project>
