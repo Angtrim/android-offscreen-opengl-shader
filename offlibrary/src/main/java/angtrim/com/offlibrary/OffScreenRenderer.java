@@ -60,10 +60,15 @@ public class OffScreenRenderer {
     private static final int TRIANGLE_VERTICES_DATA_POS_OFFSET = 0;
     private static final int TRIANGLE_VERTICES_DATA_UV_OFFSET = 3;
 
+
+
     private final float[] mTriangleVerticesData = {
             // X, Y, Z, U, V
-            -1.0f, -1.0f, 0, 0.f, 0.f, 1.0f, -1.0f, 0, 1.f, 0.f, -1.0f,
-            1.0f, 0, 0.f, 1.f, 1.0f, 1.0f, 0, 1.f, 1.f,};
+            -1.0f, -1.0f, 0, 0.f,
+            0.f, 1.0f, -1.0f, 0,
+            1.f, 0.f, -1.0f, 1.0f,
+            0, 0.f, 1.f, 1.0f,
+            1.0f, 0, 1.f, 1.f,};
 
     private FloatBuffer mTriangleVertices;
 
@@ -378,5 +383,9 @@ public class OffScreenRenderer {
         mPixelBuf.rewind();
         bmp.copyPixelsFromBuffer(mPixelBuf);
         return bmp;
+    }
+    public OffScreenRenderer setmTriangleVertices(FloatBuffer mTriangleVertices) {
+        this.mTriangleVertices = mTriangleVertices;
+        return this;
     }
 }
